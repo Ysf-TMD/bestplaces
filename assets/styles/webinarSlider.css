@@ -1,0 +1,68 @@
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.carousel-text {
+    max-width: 500px;
+}
+
+.carousel-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.prev, .next {
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.prev {
+    left: 0;
+    border: 1px solid black ;
+    border-radius: 50%;
+    padding: 20px 35px;
+}
+.next {
+    right: 0;
+    border: 1px solid black ;
+    border-radius: 50%;
+    padding: 20px 35px;
+}
+.prev:hover, .next:hover {
+    color: white;
+    background-color: #E62927;
+    border: 1px solid #E62927;
+}

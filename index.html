@@ -5,10 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Front Page</title>
+    <title>Best Places To Work For | About us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -33,15 +34,11 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./assets/styles/slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 </head>
 <style>
-
 
 </style>
 <body>
@@ -61,20 +58,17 @@
 <div  class="container-fluid front-div  text-white  py-2">
     <div class="row">
         <div class="col-md d-flex justify-content-center">
-            <a href="" class="nav-link p-1">Contact Us</a>
+            <a href="./contact_us.html" class="nav-link p-1">Contact Us</a>
             <div class="span mx-1 p-1">|</div>
-            <a href="" class="nav-link p-1">About Us</a>
+            <a href="about_us.html" class="nav-link p-1">About Us</a>
         </div>
         <div class="col-md text-center">
             <div class="row">
-                <div class="col-md d-flex justify-content-center">
-                    <a href="" class="nav-link p-1">Customer login <i class="fa-solid fa-circle-user"></i></a>
-                    <span class="mx-1 p-1">|</span>
-                    <a href="" class="nav-link p-1">Apply For Certification <i class="fa-regular fa-pen-to-square me-md-1 "></i></a>
-                </div>
+
             </div>
         </div>
         <div class="col-md d-flex justify-content-md-end  justify-content-sm-center justify-content-center text-end">
+            <a href="" class="nav-link p-1 mx-2 ">  <i class="fa-solid fa-circle-user"></i> Customer login</a>
             <select class="form-select w-auto text-end" id="languageSelect">
                 <option value="fr" data-image="./assets/images/drap/logo_fr.jpg">Fr</option>
                 <option value="en" data-image="./assets/images/drap/logo_en.jpg">An</option>
@@ -87,718 +81,1327 @@
 <!-- end navigation menu 1-->
 
 
+<!--main navigation menu  start -->
 
+<nav class="navbar sticky-md-top bg-white navbar-expand-lg text-capitalize ">
+    <div class=" container ">
+        <a class="navbar-brand fw-bold " href="./index.html">
+            <img src="assets/images/logo-best-places.webp" alt="image_logo"
+                 class="img-responsive logo   rounded-pill border border-2  shadow-sm mx-2 shadow-sm  " width="100">
+        </a>
 
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg text-capitalize ">
-
-        <div class="container-fluid ">
-            <a class="navbar-brand fw-bold " href="#">
-                <img src="assets/images/logo-best-places.webp" alt="image_logo" class="img-responsive logo  rounded-pill border border-2  shadow-sm mx-2 shadow-sm  " width="100">
-            </a>
-            <a class="navbar-toggler border-white border-0 text-black focus-ring-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </a>
-            <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto  w-100 d-flex justify-content-around    mb-lg-0">
-
-                    <li class="nav-item dropdown position-static me-md-1">
-                        <a class="nav-link linkMenu   dropdownToggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-hand-holding-heart  "></i> OUR OFFER <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                        </a>
-                        <div class="dropdown-menu  bg-dark border-0 rounded-4 p-4 mt-0"  id="dropdownMenu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 border-end border-secondary">
-                                        <div class="nav-item  dropDownLink " >
-                                            <a href="#" class="text-white nav-link p-3   rounded-2" > <i class="fa-solid fa-medal"></i> Our certification programs <i class="fa-solid mx-1 fa-arrow-right"></i></a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid fa-building"></i> Our workplace solutions  <i class="fa-solid mx-1 fa-arrow-right"></i> </a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid fa-book-bookmark"></i> success stories <i class="fa-solid mx-1 fa-arrow-right"></i></a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid  fa-briefcase"></i> Case studies <i class="fa-solid mx-1  fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7  ps-4 border-end border-secondary">
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Certify your organization and build a competitive advantage by putting your culture first</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md" >
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        our work place solution
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        our success stories
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        our case studies
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Discover how other organizations like yours got the certification
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
+        <a class="navbar-toggler border-white border-0  focus-ring-light" type="button"
+           data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+           aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </a>
+        <div class="collapse   navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  me-auto container  justify-content-around mb-lg-0">
+                <li class="nav-item dropdown position-static me-md-1">
+                    <a class="nav-link linkMenu text-uppercase  shadow-none  dropdownToggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-medal"></i> Certification
+                        <i class="fa-solid fa-chevron-down rotate-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light   rounded-0 border-0 mt-0" id="dropdownMenu">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3  ">
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./our_certification_programs.html" class=" nav-link text-black   "> <i
+                                                            class="fa-solid fa-medal px-2"></i> Our certification programs
+                                                        <i class="fa-solid  fa-arrow-right"></i>
                                                     </a>
                                                 </div>
-                                                <!-- Right Column -->
-                                                <div class="col-md ">
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./how_it_works.html" class=" nav-link  text-black  "> <i
+                                                            class="fa-solid fa-building px-2"></i> How it works <i
+                                                            class="fa-solid mx-1 fa-arrow-right"></i> </a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" data-index="">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Certify 2 your organization and build a competitive advantage by putting your culture first</h4>
-                                                    <hr>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./benchmark.html" class=" nav-link text-black  "> <i
+                                                            class="fa-solid px-2 fa-book-bookmark"></i> Benchmark <i
+                                                            class="fa-solid mx-1 fa-arrow-right"></i></a>
                                                 </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                        <div class="row  itemDiv" data-index="">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Certify success</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                   to success , our success stories
-                                                </a>
-
-                                            </div>
-
-                                        </div>
-                                        <div class="row  itemDiv" data-index="">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Certify Case </h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                   to our case studies , go
-                                                </a>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md justify-content-center">
-                                        <div class="card  rounded-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title ">Solutions</h5>
-                                                <p class="card-text ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
-                                                </p>
-                                                <a href="#" class="btn btn-red  rounded-pill w-75">play <i class="fa-solid fa-square-caret-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-
-
-                    <li class="nav-item dropdown position-static me-md-1">
-                        <a class="nav-link linkMenu    dropdownToggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-user-tie"></i>
-                            EMPLOYERS OF CHOICE <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                        </a>
-                        <div class="dropdown-menu  bg-dark border-0 rounded-4 p-4 mt-0"  id="dropdownMenu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 border-end border-secondary">
-                                        <div class="nav-item  dropDownLink " >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2 " >Certified organizations</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Celebration events</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Specific programs</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Our recent lists</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Press releases</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Companies profile</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 section_div  ps-4 border-end border-secondary">
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Our certified organizations value their people and understand the importance of a truly engaged workforce.</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="row ">
-                                                <div class="col-md " >
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Discover some of our local, regional and global certified organizations
+                                                <div class="nav-item   dropDownLink">
+                                                    <a href="./our_assessment_model.html" class=" nav-link  text-black "> <i
+                                                            class="fa-solid px-2 fa-briefcase"></i>  Our assessment model<i
+                                                            class="fa-solid mx-1  fa-arrow-right"></i>
                                                     </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3" data-index="6">
-                                                        Celebrate your achievement in your premises or during our external celebration events
+                                                </div>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./specific_programs.html" class=" nav-link text-black  ">
+                                                        <i class="fa-solid px-2 fa-clipboard-list"></i> specific  programs<i
+                                                            class="fa-solid mx-1  fa-arrow-right"></i>
+
                                                     </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3" data-index="7">
+                                                </div>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./hr_pre_assessment.html" class=" nav-link text-black  ">
+                                                        <i class="fa-solid px-1 fa-rectangle-list"></i>
+                                                        HR Pre-assessment
+                                                        <i class="fa-solid mx-1  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./celebration_events.html" class=" nav-link text-black  ">
+                                                        <i class="fa-solid fa-calendar-days px-2"></i>
+                                                        Celebration events
+                                                        <i class="fa-solid mx-1  fa-arrow-right"></i>
+
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./faq.html" class=" nav-link text-black "> <i class="fa-solid fa-question px-2"></i>
+                                                        FAQ
+                                                        <i class="fa-solid mx-1  fa-arrow-right"></i>
+
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 border-start ps-4  ">
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class=" text-center">Certify your organization and
+                                                                build a competitive advantage by putting your culture first</h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            Learn how the Best Place to Work certification program can help you boost your HR performance
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify  your organization and
+                                                                build a competitive advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Learn more about the certification steps and how it can impact your organization
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first</h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Explore how companies are creating world class employee experiences across different countries and regions
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Learn more about our 8 workplace factors focusing on evaluating your HR Practices and your employee experience
+                                                    </div>
+
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
                                                         Stand out as an Employer of Choice in one of our specific programs
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3" data-index="8">
-                                                        Dashboard
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Discover how other organizations like yours got the certification
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Certified organizations have the chance to appear in our different rankings
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Check the press releases for certified organizations around the world
-                                                    </a>
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Learn about companies that are creating the best workplace cultures
-                                                    </a>
+                                                    </div>
                                                 </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Assess your readiness to obtain the certification
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Celebrate your achievement in your premises or during our external celebration events
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Check some of our frequently asked questions about the program
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Celebration events</h4>
-                                                    <hr>
+                                            <div class="col-md border-start   justify-content-center">
+                                                <div class="card my-3  rounded-0 border-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Solutions</h5>
+                                                        <p class="card-text ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Accusantium animi eaque magnam nulla porro quas quasi quod sint ut
+                                                            velit.
+                                                        </p>
+                                                        <a href="#" class="btn btn-red text-white  rounded-0 w-75">play <i
+                                                                class="fa-solid fa-square-caret-right"></i></a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-                                            <!-- Right Column -->
-                                            <div class="col-md ">
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Specfic programs</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-                                            <!-- Right Column -->
-                                            <div class="col-md ">
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">our recent lists</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-                                            <!-- Right Column -->
-                                            <div class="col-md ">
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">release press</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-                                            <!-- Right Column -->
-                                            <div class="col-md ">
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" >
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Companies profiles </h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how the Best Place to Work certification program can help you boost your HR performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Discover how other organizations like yours got the certification
-                                                </a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                                                </a>
-                                            </div>
-                                            <!-- Right Column -->
-                                            <div class="col-md ">
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md justify-content-center">
-                                        <div class="card  rounded-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title ">Solutions</h5>
-                                                <p class="card-text ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
-                                                </p>
-                                                <a href="#" class="btn btn-red  rounded-pill w-75">play <i class="fa-solid fa-square-caret-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown position-static me-md-1">
-                        <a class="nav-link linkMenu    dropdownToggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-shoe-prints"></i> STEPS TO CERTIFICATION <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                        </a>
-                        <div class="dropdown-menu  bg-dark border-0 rounded-4 p-4 mt-0"  id="dropdownMenu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 border-end border-secondary">
-                                        <div class="nav-item  dropDownLink " >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2 " >Articles</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Webinars and events</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Our HR Community</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Benchmark</a>
-                                        </div>
 
-                                    </div>
-                                    <div class="col-md-7 section_div  ps-4 border-end border-secondary">
-                                        <div class="row  itemDiv" data-index="0">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Articles for best practices</h4>
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                            <div class="row ">
-                                                <div class="col-md " >
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Your source for best practices, tips and industry trends
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+                <li class="nav-item dropdown position-static me-md-1">
+                    <a class="nav-link linkMenu text-uppercase  shadow-none  dropdownToggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user-tie"></i> Certified Companies
+                        <i class="fa-solid fa-chevron-down rotate-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light   rounded-0 border-0 mt-0" id="dropdownMenu">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3  ">
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./certifiedOrganisation.html" class=" nav-link text-black   "> <i
+                                                            class="fa-solid fa-medal px-2"></i> Certifier Organizations
+                                                        <i class="fa-solid  fa-arrow-right"></i>
                                                     </a>
                                                 </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="row  itemDiv" data-index="2">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Get insights, ideas, and HR strategies from HR professionals and culture coaches during our upcoming webinars and events</h4>
-                                                    <hr>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./companies_profiles.html" class=" nav-link  text-black  "> <i
+                                                            class="fa-solid fa-building px-2"></i> Companies Profiles <i
+                                                            class="fa-solid mx-1 fa-arrow-right"></i> </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink">
+                                                    <a href="./ourRankingList.html" class=" nav-link text-black  "> <i
+                                                            class="fa-solid px-2 fa-book-bookmark"></i> Explore Our Ranking List <i
+                                                            class="fa-solid mx-1 fa-arrow-right"></i></a>
+                                                </div>
+                                                <div class="nav-item   dropDownLink">
+                                                    <a href="./successStories.html" class=" nav-link  text-black "> <i
+                                                            class="fa-solid px-2 fa-briefcase"></i> Success Stories
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Your source for best practices, tips and industry trends
-                                                </a>
-                                            </div>
-                                            <div class="col-md  text-white">
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <div class="col-md-6 border-start ps-4  ">
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class=" text-center">Certify your organization and
+                                                                build a competitive advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            Learn how the Best Place to Work certification program can help you boost your HR performance
+                                                        </div>
 
-                                    <div class="col-md justify-content-center">
-                                        <div class="card  rounded-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title ">Solutions</h5>
-                                                <p class="card-text ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
-                                                </p>
-                                                <a href="#" class="btn btn-red  rounded-pill w-75">play <i class="fa-solid fa-square-caret-right"></i></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify  your organization and
+                                                                build a competitive advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Learn more about the certification steps and how it can impact your organization
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first</h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Explore how companies are creating world class employee experiences across different countries and regions
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Learn more about our 8 workplace factors focusing on evaluating your HR Practices and your employee experience
+                                                    </div>
+
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Stand out as an Employer of Choice in one of our specific programs
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Assess your readiness to obtain the certification
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Celebrate your achievement in your premises or during our external celebration events
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv" data-index="">
+                                                    <div class="container-fluid">
+                                                        <div class="row text-black ">
+                                                            <h4 class="text-black text-center">  Certify  your organization and
+                                                                build a competitive advantage by putting your culture first </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md">
+                                                        Check some of our frequently asked questions about the program
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md border-start   justify-content-center">
+                                                <div class="card my-3  rounded-0 border-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Solutions</h5>
+                                                        <p class="card-text ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Accusantium animi eaque magnam nulla porro quas quasi quod sint ut
+                                                            velit.
+                                                        </p>
+                                                        <a href="#" class="btn btn-red text-white  rounded-0 w-75">play <i
+                                                                class="fa-solid fa-square-caret-right"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown position-static me-md-1">
-                        <a class="nav-link linkMenu   dropdownToggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-book-open"></i> RESOURCES <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                        </a>
-                        <div class="dropdown-menu  bg-dark border-0 rounded-4 p-4 mt-0"  id="dropdownMenu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 border-end border-secondary">
-                                        <div class="nav-item  dropDownLink " >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2 " >Articles</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Webinars and events</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Our HR Community</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Benchmark</a>
-                                        </div>
 
-                                    </div>
-                                    <div class="col-md-7 section_div  ps-4 border-end border-secondary">
-                                        <div class="row  itemDiv" data-index="0">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Articles for best practices</h4>
-                                                    <hr>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item dropdown position-static me-md-1">
+                    <a class="nav-link linkMenu text-uppercase  shadow-none  dropdownToggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-hand-holding-droplet"></i>  our offer
+                        <i class="fa-solid fa-chevron-down rotate-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light   rounded-0 border-0 mt-0" >
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3  ">
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./ourWorkPlaceSolutions.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-handshake"></i>
+                                                        our workplace solutions
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="row ">
-                                                <div class="col-md " >
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Your source for best practices, tips and industry trends
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./exploreOurMajorAreasConsulting.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                        Explore our Major areas of consulting
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./360.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-hashtag"></i>
+                                                        360º
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./pulse.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-wave-square"></i>
+                                                        Pulse
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./training.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-hands-holding-child"></i>
+                                                        Training
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./initiatives.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-hand-holding-heart"></i>
+                                                        Initiatives
+                                                        <i class="fa-solid  fa-arrow-right"></i>
                                                     </a>
                                                 </div>
 
                                             </div>
-                                        </div>
-                                        <div class="row  itemDiv" data-index="2">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Get insights, ideas, and HR strategies from HR professionals and culture coaches during our upcoming webinars and events</h4>
-                                                    <hr>
+                                            <!--section start -->
+                                            <div class="col-md-6 border-start ps-4  ">
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            Learn how the Best Place to Work certification program can
+                                                            help you boost your HR performance
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content for explore our major areas
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content for 360
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content for pulse
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            training
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            initiatives
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Your source for best practices, tips and industry trends
-                                                </a>
-                                            </div>
-                                            <div class="col-md  text-white">
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <!--section end -->
 
-                                    <div class="col-md justify-content-center">
-                                        <div class="card  rounded-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title ">Solutions</h5>
-                                                <p class="card-text ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
-                                                </p>
-                                                <a href="#" class="btn btn-red  rounded-pill w-75">play <i class="fa-solid fa-square-caret-right"></i></a>
+
+
+
+                                            <div class="col-md border-start   justify-content-center">
+                                                <div class="card my-3  rounded-0 border-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Solutions</h5>
+                                                        <p class="card-text ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Accusantium animi eaque magnam nulla porro quas quasi quod sint ut
+                                                            velit.
+                                                        </p>
+                                                        <a href="#" class="btn btn-red text-white  rounded-0 w-75">play <i
+                                                                class="fa-solid fa-square-caret-right"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown position-static me-md-1">
-                        <a class="nav-link  linkMenu   dropdownToggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-address-card"></i> ABOUT US  <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                        </a>
-                        <div class="dropdown-menu  bg-dark border-0 rounded-4 p-4 mt-0"  id="dropdownMenu">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3 border-end border-secondary">
-                                        <div class="nav-item  dropDownLink " >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2 " >Articles</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Webinars and events</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Our HR Community</a>
-                                        </div>
-                                        <div class="nav-item  dropDownLink" >
-                                            <a href="#" class="text-white nav-link p-3  rounded-2">Benchmark</a>
-                                        </div>
 
-                                    </div>
-                                    <div class="col-md-7 section_div  ps-4 border-end border-secondary">
-                                        <div class="row  itemDiv" data-index="0">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Articles for best practices</h4>
-                                                    <hr>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+                <li class="nav-item dropdown position-static me-md-1">
+                    <a class="nav-link linkMenu text-uppercase  shadow-none  dropdownToggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-book-open"></i>  Scietific Materials
+                        <i class="fa-solid fa-chevron-down rotate-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light   rounded-0 border-0 mt-0" >
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3  ">
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./publications.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-bullhorn"></i>
+                                                       Publications
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="row ">
-                                                <div class="col-md " >
-                                                    <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                        Your source for best practices, tips and industry trends
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./articles.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-newspaper"></i>
+                                                        Articles
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./caseStudies.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-exclamation"></i>
+                                                        Case Studies
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./whiteBooks.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-book"></i>
+                                                        white Books
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./podCasts.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-microphone-lines"></i>
+                                                        Pod Casts
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./workshop.html" class=" nav-link text-black   ">
+                                                        <i class="fa-brands fa-creative-commons-nd"></i>
+                                                        Workshop
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./laboratory.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-flask-vial"></i>
+                                                        Laboratory
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./expertive.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-address-card"></i>
+                                                        Expertive
+                                                        <i class="fa-solid  fa-arrow-right"></i>
                                                     </a>
                                                 </div>
 
                                             </div>
-                                        </div>
-                                        <div class="row  itemDiv" data-index="2">
-                                            <div class="container-fluid">
-                                                <div class="row text-white ">
-                                                    <h4 class="text-white text-center">Get insights, ideas, and HR strategies from HR professionals and culture coaches during our upcoming webinars and events</h4>
-                                                    <hr>
+                                            <!--section start -->
+                                            <div class="col-md-6 border-start ps-4  ">
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content for publications
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content articles
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                           case studies
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                           white books
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                          pod casts
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            laboratory
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            expertive
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md" >
-                                                <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                                    Your source for best practices, tips and industry trends
-                                                </a>
-                                            </div>
-                                            <div class="col-md  text-white">
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <!--section end -->
 
-                                    <div class="col-md justify-content-center">
-                                        <div class="card  rounded-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title ">Solutions</h5>
-                                                <p class="card-text ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
-                                                </p>
-                                                <a href="#" class="btn btn-red  rounded-pill w-75">play <i class="fa-solid fa-square-caret-right"></i></a>
+                                            <div class="col-md border-start   justify-content-center">
+                                                <div class="card my-3  rounded-0 border-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Solutions</h5>
+                                                        <p class="card-text ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Accusantium animi eaque magnam nulla porro quas quasi quod sint ut
+                                                            velit.
+                                                        </p>
+                                                        <a href="#" class="btn btn-red text-white  rounded-0 w-75">play <i
+                                                                class="fa-solid fa-square-caret-right"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                    </li>
-                    <li class="nav-item col-md text-end justify-content-center ">
-                        <li class="nav-item   dropdown me-md-1">
-                            <a class="nav-link  linkMenu dropDownLink  hoverLink " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-earth-africa "></i> ENG <i class="fa-solid fa-chevron-down rotate-icon"></i>
-                            </a>
-                            <div class="dropdown-menu  itemDiv  container-fluid ">
-                                <a class="dropdown-item pe-1 text-white hoverLink" href="#">FR</a>
-                                <a class="dropdown-item pe-1 text-white hoverLink" href="#">AR</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown position-static me-md-1">
+                    <a class="nav-link linkMenu text-uppercase  shadow-none  dropdownToggle" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-calendar-check"></i> Events & Media
+                        <i class="fa-solid fa-chevron-down rotate-icon"></i>
+                    </a>
+                    <div class="dropdown-menu bg-light   rounded-0 border-0 mt-0" >
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3  ">
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./webinars.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-star"></i>
+                                                      Webinars
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./events.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-certificate"></i>
+                                                        Events
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./press_releases.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-newspaper"></i>
+                                                        Press Releases
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="nav-item  dropDownLink ">
+                                                    <a href="./hr_community.html" class=" nav-link text-black   ">
+                                                        <i class="fa-solid fa-users"></i>
+                                                        HR community
+                                                        <i class="fa-solid  fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--section start -->
+                                            <div class="col-md-6 border-start ps-4  ">
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content for wibinars
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            content events
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                           case presse releasses
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                           whitehr community
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row  itemDiv">
+                                                    <div class="container-fluid">
+                                                        <div class="row  ">
+                                                            <h4 class="text-black text-center">
+                                                                Certify your organization and build a competitive
+                                                                advantage by putting your culture first
+                                                            </h4>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                          news room
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--section end -->
+
+                                            <div class="col-md border-start   justify-content-center">
+                                                <div class="card my-3  rounded-0 border-1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Solutions</h5>
+                                                        <p class="card-text ">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Accusantium animi eaque magnam nulla porro quas quasi quod sint ut
+                                                            velit.
+                                                        </p>
+                                                        <a href="#" class="btn btn-red text-white  rounded-0 w-75">play <i
+                                                                class="fa-solid fa-square-caret-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                    <li class="nav-item rounded-4  justify-content-end">
-                        <a href="#" class="btn btn-red rounded-2 text-white  fw-bold  nav-item text-uppercase rounded-5 me-md-1"><i class="fa-regular fa-pen-to-square me-md-1 "></i>Apply For The certification</a>
-                        <a href="#" class="btn btn-red rounded-2  nav-item fw-bold text-white rounded-5" > <i class="fa-solid fa-circle-user"></i> LOGIN </a>
-                    </li>
-                </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <!--search section start -->
+                <li class="nav-item col-md d-flex align-items-center  justify-content-end  ">
+                    <i class="fa-solid fa-magnifying-glass  " style="cursor: pointer" data-bs-toggle="modal"
+                       data-bs-target="#staticBackdrop"></i>
+                </li>
+                <!--search section end -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--main navigation menu end -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Search for key words</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="col-md-8 mx-auto col-12 col-sm-12 justify-content-center" action="">
+                    <div class="input-group justify-content-sm-center">
+                        <input type="search" class="form-control focus-ring focus-ring-light border-1 border-danger" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="searchInput"/>
+                        <button type="button" class="btn btn-red text-white focus-ring focus-ring-light" data-mdb-ripple-init>
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="tags-container mt-3">
+                    <span class="tag " onclick="setSearchValue('employee engagement')">Employee Engagement</span>
+                    <span class="tag" onclick="setSearchValue('workplace culture')">Workplace Culture</span>
+                    <span class="tag" onclick="setSearchValue('certifications')">Certifications</span>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</div>
+<!-- Modal end  -->
+
+<!-- first block main content-->
+<div class="container-md container-fluid  my-2 py-2">
+    <div class="row">
+        <div class="col-md d-flex flex-column align-items-center justify-content-center">
+            <div class="container   my-5">
+                <h1 style="" class="h1 p-2 title my- fw-bold ">
+                    Begin your journey <br>
+                    <span class="bling-text text-red fs-1"> As Best Place to Work</span>
+
+                </h1>
+                <div class="container  text-muted">
+                    <h6 class="fs-6">Get certified today and unlock a wide range of exclusive benefits</h6>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8  d-flex justify-content-around mx-auto">
+                                <button class="btn-red p-3 my-3    border-0   my-1">Get Certified Now <i
+                                        class="fa-solid mx-1 fa-arrow-right"></i></button>
+                                <button class="btn-red-bordred p-3 my-3    border-0   my-1">Play video <i
+                                        class="fa-solid fa-circle-play mx-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md  ">
+            <div class="row justify-content-end">
+                <div class="col-md-8 ">
+                    <img src="./assets/images/home/imgHome.webp" alt="home image" loading="lazy"
+                         class="img-fluid homeImage ">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<!-- View Our latest News start -->
+<div class="container-fluid">
+    <section class="values-section py-3">
+        <div class="container ">
+            <h2 class="text-start text-uppercase mb-3 fw-bold" style="color: #EE1C25;">View Our latest News</h2>
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <!-- Card 1 -->
+                    <div class="card  border-0 shadow-sm">
+                        <div class="card-body img-container p-4">
+                            <div class="container-fluid text-center">
+                                <img src="./assets/images/news/returo.png" alt="Collaboration" class="img-fluid object-fit-contain mb-4" style="height: 200px;">
+                            </div>
+                            <h2 class="card-title text-capitalize  mb-3 " >RetuRO DRS </h2>
+                            <div class="row">
+                                <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto d-flex justify-content-between ">
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i> 15min read
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-eye"></i> 2K views
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-comment-dots"></i> comments
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-share"></i> 1.5k share
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="card-text text-start text-muted border-top  mt-2">
+                                RetuRO DRS recognized as a Best Place to Work in Romania for 2024-2025
+                                <a href="" class=""> ...  read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    <section class="container-fluid text-start mt-2">
+                        <p class=" h5">
+                            Stay informed with our latest updates, industry insights, and company achievements. Our news section brings you exclusive stories, expert perspectives, and key announcements to keep you ahead of the curve. Explore our latest articles and stay connected with the innovations shaping our industry.
+                            Let me know if you'd like any refinements! 🚀
+                        </p>
+                    </section>
+                </div>
+                <div class="col-md">
+                   <div class="row px-2" style="max-height: 580px ; overflow-y: auto" >
+                       <!--card 1 start -->
+                       <article class="card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                               <div class="col-md-4 d-flex align-items-center">
+                                   <img src="./assets/images/news/trialpro.png" class="img-fluid rounded-start" alt="">
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="card-body">
+                                       <h4 class="card-title border-bottom text-capitalize">
+                                           Trial Pro
+                                       </h4>
+                                       <p class="text-start text-muted">
+                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
+                                       </p>
+                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
+                                            <div class="d-flex justify-content-between">
+                                                <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
+                                            </div>
 
-<div class="container-fluid my-2 py-2">
-<div class="row">
-    <div class="col-md d-flex flex-column align-items-center justify-content-center">
-        <div class="container  text-center my-5">
-            <h1 style="font-size: 32px" class="h1 p-2 my- fw-bold justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-            <div  class="container text-center text-muted">
-                <h6 >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis culpa ex fuga maiores nobis perferendis placeat. Animi, deleniti, eaque.</h6>
-                <div class="container-fluid">
+                                            <div class="d-flex justify-content-between">
+                                                <span>
+                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
+                                                </span>
+                                                <span>
+                                                     <i class="fa-solid fa-share"></i> 1.5k share
+                                                </span>
+                                            </div>
+                                       </div>
+                                        <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
+                                       </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                       <!--card 1 end -->
+                       <!--card 2 start -->
+                       <article class="card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                               <div class="col-md-4 d-flex align-items-center">
+                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="card-body">
+                                       <h4 class="card-title border-bottom text-capitalize">
+                                          AstraZeneca
+                                       </h4>
+                                       <p class="text-start text-muted">
+                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
+                                       </p>
+                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
+                                           <div class="d-flex justify-content-between">
+                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
+                                           </div>
+
+                                           <div class="d-flex justify-content-between">
+                                                <span>
+                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
+                                                </span>
+                                               <span>
+                                                     <i class="fa-solid fa-share"></i> 1.5k share
+                                                </span>
+                                           </div>
+                                       </div>
+                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
+                                       </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                       <!--card 2 end -->
+                       <!--card 2 start -->
+                       <article class="card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                               <div class="col-md-4 d-flex align-items-center">
+                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="card-body">
+                                       <h4 class="card-title border-bottom text-capitalize">
+                                          AstraZeneca
+                                       </h4>
+                                       <p class="text-start text-muted">
+                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
+                                       </p>
+                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
+                                           <div class="d-flex justify-content-between">
+                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
+                                           </div>
+
+                                           <div class="d-flex justify-content-between">
+                                                <span>
+                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
+                                                </span>
+                                               <span>
+                                                     <i class="fa-solid fa-share"></i> 1.5k share
+                                                </span>
+                                           </div>
+                                       </div>
+                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
+                                       </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                       <!--card 2 end -->
+                       <!--card 2 start -->
+                       <article class="card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                               <div class="col-md-4 d-flex align-items-center">
+                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="card-body">
+                                       <h4 class="card-title border-bottom text-capitalize">
+                                          AstraZeneca
+                                       </h4>
+                                       <p class="text-start text-muted">
+                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
+                                       </p>
+                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
+                                           <div class="d-flex justify-content-between">
+                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
+                                           </div>
+
+                                           <div class="d-flex justify-content-between">
+                                                <span>
+                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
+                                                </span>
+                                               <span>
+                                                     <i class="fa-solid fa-share"></i> 1.5k share
+                                                </span>
+                                           </div>
+                                       </div>
+                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
+                                       </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                       <!--card 2 end -->
+                       <!--card 2 start -->
+                       <article class="card mb-3" style="max-width: 540px;">
+                           <div class="row g-0">
+                               <div class="col-md-4 d-flex align-items-center">
+                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
+                               </div>
+                               <div class="col-md-8">
+                                   <div class="card-body">
+                                       <h4 class="card-title border-bottom text-capitalize">
+                                          AstraZeneca
+                                       </h4>
+                                       <p class="text-start text-muted">
+                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
+                                       </p>
+                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
+                                           <div class="d-flex justify-content-between">
+                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
+                                           </div>
+
+                                           <div class="d-flex justify-content-between">
+                                                <span>
+                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
+                                                </span>
+                                               <span>
+                                                     <i class="fa-solid fa-share"></i> 1.5k share
+                                                </span>
+                                           </div>
+                                       </div>
+                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
+                                       </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                       <!--card 2 end -->
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- View Our latest News end -->
+
+
+<!--section why choose us start -->
+<div class="container my-3 py-3">
+    <div class="row justify-content-between  img-container p-2 text-center">
+        <div class="row mb-4">
+            <h2 class="text-start text-uppercase text-red fw-bold" >Why Choose Us</h2>
+            <p class="h2 text-start fw-bold ">
+                Empowering Your Business for Sustainable and Exponential Growth.
+            </p>
+        </div>
+        <div class="col-md-3 text-start">
+            <div class="row">
+                <h2 class="text-red h2"><i class="fa-solid fa-arrow-up-right-dots"></i></h2>
+                <h4>Best In Industy</h4>
+                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
+            </div>
+            <div class="row">
+                <h2 class="text-red h2"><i class="fa-solid fa-medal"></i></h2>
+                <h4>Award Winning</h4>
+                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
+            </div>
+        </div>
+        <div class="col-md-4  ">
+            <img src="./assets/images/chooseUs/choose_us.jpg" alt="bestplacestoworkfor_why_choose_us_image" class="img-fluid w-100 ">
+        </div>
+        <div class="col-md-3 text-start">
+            <div class="row " >
+                <h2 class="text-red"><i class=" fa-solid fa-users " ></i></h2>
+                <h4>Satisfied Clients 90%</h4>
+                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
+            </div>
+            <div class="row " >
+                <h2><i class="fa-solid fa-phone text-red"></i></h2>
+                <h4 class="">24/7 Support</h4>
+                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--section why choose us end -->
+
+
+
+<!--section our success stories start  -->
+<section class="container-fluid mt-5 bg-red">
+    <div class="container ">
+        <div class="row mb-4">
+            <h2 class="text-start text-uppercase text-red fw-bold " >Inspiring Success Stories: Real Achievements, Real Impact.</h2>
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="fw-bold text-black">Our Success Stories :</h1>
+                    <p class="h4 text-start  d-flex align-items-center  succesText text-justify ">
+                        Discover the remarkable journeys of businesses that have thrived with our expertise and support. Our success stories showcase how we’ve helped clients overcome challenges, seize opportunities, and achieve exponential growth. Each story reflects our commitment to delivering innovative solutions and exceptional results, demonstrating the impact of our partnership on their success.
+                    </p>
                     <div class="row">
-                        <div class="col-md-8  d-flex justify-content-around mx-auto">
-                            <button class="btn-red p-3 my-3 fw-bold  rounded-2 border-0   focus-ring-warning">Get Certified Now <i class="fa-solid mx-1 fa-arrow-right"></i></button>
-                            <button  style="color: #112748" id="playVideoButton" class="bg-transparent  h4 border-0 p-3 my-1 fw-bold  rounded-pill focus-ring-warning">
-                                PLay Video <i   class="fa-solid fa-circle-play mx-1"></i>
-                            </button>
+                        <div class="col-md">
+                            <button class="text-white col-md-7 mt-3 p-3   shadow-none btnSuccess border-white  rounded-2 btn fw-bold h2 bg-red text-red ">View Our Liste Of Success Stories <i class="fa-solid fa-medal  mx-2 "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="row p-1 img-container">
+                        <div class="col-md mb-2 ">
+                            <img src="./assets/images/home/success.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
+                        </div>
+                        <div class="col-md mb-2 ">
+                            <img src="./assets/images/home/success2.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
+                        </div>
+                    </div>
+                    <div class="row img-container p-1">
+                        <div class="col-md mb-2">
+                            <img src="./assets/images/home/success3.jpg" alt="bestplacestowork_success_story_image" class=" img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
+                        </div>
+                        <div class="col-md mb-2 ">
+                            <img src="./assets/images/home/success4.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md">
-        <div class="container">
-            <img src="./assets/images/home/imgHome.webp" alt="home image" loading="lazy" class="img-fluid homeImage">
-        </div>
-    </div>
-</div>
-</div>
-
-<!--slider continue -->
-<div class="slider-container my-4 py-2">
-    <div class="container-fluid">
-        <div class="container">
-            <h1 style="color: #EE1C25" class="text-center text-uppercase">
-                Join the list of certified companies today!
-            </h1>
-        </div>
-    </div>
-    <hr>
-    <div class="slider">
-        <div class="slider-track">
-            <img src="assets/images/carousel/Dell.png" alt="Dell">
-            <img src="assets/images/carousel/Mdcs.png" alt="Mdcs">
-            <img src="assets/images/carousel/Moneygram.png" alt="Moneygram">
-            <img src="assets/images/carousel/Sapin.png" alt="Sapin">
-        </div>
-    </div>
-</div>
+</section>
+<!--section our success stories end  -->
 
 
-<div class="container-fluid my-3 py-3">
-    <div class="row justify-content-around text-center">
-        <div class="col-md col-6 col-sm-6  ">
-            <div class="cardCalc" data-target="80">
-                <h2>Clients Satisfaits</h2>
-                <span class="percentage h1">0%</span>
-            </div>
-        </div>
-        <div class="col-md col-6 col-sm-6 ">
-            <div class="cardCalc" data-target="95">
-                <h2>Projets Réussis</h2>
-                <span class="percentage h1">0%</span>
-            </div>
-        </div>
-        <div class="col-md col-6 col-sm-6 ">
-            <div class="cardCalc" data-target="75">
-                <h2>Support 24/7</h2>
-                <span class="percentage h1">0%</span>
-            </div>
-        </div>
-        <div class="col-md col-6 col-sm-6 ">
-            <div class="cardCalc" data-target="90">
-                <h2>Livraison Rapide</h2>
-                <span class="percentage h1">0%</span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    
 <!-- video section-->
 <div class="container-fluid my-3 py-3">
     <div class="row">
@@ -829,58 +1432,7 @@
 
     </div>
 </div>
-</div>
 
-<!-- what we value the moste -->
-<div class="container-fluid">
-
-    <section class="values-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold" style="color: #EE1C25;">What we value most</h2>
-
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="./assets/images/valueTheMoste/values-1.png" alt="Collaboration" class="img-fluid mb-4" style="height: 200px;">
-                            <h3 class="card-title h4 mb-3" style="color: #1a1f36;">Ad cupiditate sed est odio</h3>
-                            <p class="card-text text-muted">
-                                Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="./assets/images/valueTheMoste/values-2.png" alt="Innovation" class="img-fluid mb-4" style="height: 200px;">
-                            <h3 class="card-title h4 mb-3" style="color: #1a1f36;">Voluptatem voluptatum alias</h3>
-                            <p class="card-text text-muted">
-                                Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <img src="./assets/images/valueTheMoste/values-3.png" alt="Efficiency" class="img-fluid mb-4" style="height: 200px;">
-                            <h3 class="card-title h4 mb-3" style="color: #1a1f36;">Fugit cupiditate alias nobis</h3>
-                            <p class="card-text text-muted">
-                                Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
 
 
 <div class="container">
@@ -1038,14 +1590,14 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/mainSlider/img1.avif" class="d-block w-100" alt="...">
+                <img src="./assets/images/celebrationEvents/Tunisie%202019-h9059g.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/mainSlider/img1.avif" class="d-block w-100" alt="...">
+                <img src="./assets/images/celebrationEvents/slider%20celebration%20romania%202019-cmpm1z.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
@@ -1084,10 +1636,11 @@
             <div class="row">
                 <div class="col-md-3 border-end border-secondary">
                     <div class="nav-item  dropDownLink " >
-                        <a href="#" class="text-white nav-link p-3   rounded-2" > <i class="fa-solid fa-medal"></i> Our certification programs <i class="fa-solid mx-1 fa-arrow-right"></i></a>
+                        <a href="./our_certification_programs.html" class="text-white nav-link p-3   rounded-2" > <i class="fa-solid fa-medal"></i> Our certification programs <i class="fa-solid mx-1 fa-arrow-right"></i></a>
                     </div>
                     <div class="nav-item  dropDownLink" >
-                        <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid fa-building"></i> Our workplace solutions  <i class="fa-solid mx-1 fa-arrow-right"></i> </a>
+                        <a href="#" class="text-white nav-link p-3  rounded-2">
+                            <i class="fa-solid fa-handshake"></i> Our workplace solutions   <i class="fa-solid mx-1 fa-arrow-right"></i> </a>
                     </div>
                     <div class="nav-item  dropDownLink" >
                         <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid fa-book-bookmark"></i> success stories <i class="fa-solid mx-1 fa-arrow-right"></i></a>
@@ -1209,201 +1762,7 @@
 
 <button id="scrollToTop" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
 
-
-
-
-
-
-
-
-
-<!-- script for the lang select with flags-->
-<script>
-    $(document).ready(function() {
-        function formatState (state) {
-            if (!state.id) {
-                return state.text;
-            }
-            var $state = $(
-                '<p class="justify-content-between"><img src="' + $(state.element).data('image') + '" class="img-flag me-1" width="16" height="15"/> ' + state.text + '</p>'
-            );
-            return $state;
-        }
-
-        $('#languageSelect').select2({
-            templateResult: formatState,
-            templateSelection: formatState,
-            minimumResultsForSearch: -1
-        });
-    });
-</script>
-
-<script>
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        let scrollToTopBtn = document.getElementById("scrollToTop");
-
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 300) { // Affiche le bouton après 300px de scroll
-                scrollToTopBtn.classList.add("show");
-            } else {
-                scrollToTopBtn.classList.remove("show");
-            }
-        });
-
-        scrollToTopBtn.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    });
-
-    function animateCard(card) {
-        let counter = { value: 0 };
-        let targetValue = card.getAttribute("data-target"); // Récupère la valeur cible
-
-        // Animation d'apparition de la carte
-        gsap.to(card, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out"
-        });
-
-        // Animation du compteur
-        gsap.to(counter, {
-            value: targetValue,
-            duration: 6,
-            ease: "power2.out",
-            onUpdate: function() {
-                card.querySelector(".percentage").innerText = Math.floor(counter.value) + "%";
-            }
-        });
-    }
-
-    // Intersection Observer pour détecter le scroll
-    let observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCard(entry.target);
-                observer.unobserve(entry.target); // Arrête d'observer après l'animation
-            }
-        });
-    }, { threshold: 0.5 }); // Déclenche l'animation quand 50% de la carte est visible
-
-    // Cible toutes les cartes
-    document.querySelectorAll(".cardCalc").forEach(card => observer.observe(card));
-</script>
-        
-<script>
-
-    $(document).ready(function () {
-        // Ajout des indices uniques à chaque menu
-        $(".dropDownLink").each(function (index) {
-            $(this).attr("data-index", index); // Indice pour chaque lien
-        });
-
-        $(".itemDiv").each(function (index) {
-            $(this).attr("data-index-div", index); // Indice pour chaque section
-        });
-
-        // Afficher le premier élément de chaque menu au chargement
-        $(".dropdown-menu").each(function () {
-            const $menu = $(this);
-            $menu.find(".itemDiv").hide(); // Cache toutes les sections dans ce menu
-            $menu.find(".itemDiv:first-child").show(); // Affiche la première section
-        });
-
-        // Hover sur les liens
-        $(".nav-item .dropdown-menu").each(function (menuIndex) {
-            const $menu = $(this);
-            const $links = $menu.find(".dropDownLink");
-            const $items = $menu.find(".itemDiv");
-
-            $links.each(function (linkIndex) {
-                $(this).hover(
-                    function () {
-                        // Récupère l'index du lien
-                        let index = $(this).attr("data-index");
-
-                        // Masque toutes les sections et affiche celle qui correspond
-                        $items.hide();
-                        $items.filter("[data-index-div='" + index + "']").show();
-                    },
-                    function () {
-                        // Optionnel : réafficher la première section lorsque l'on sort du hover
-                        $items.hide();
-                        $items.first().show();
-                    }
-                );
-            });
-        });
-
-
-        $(".dropdownToggle").on("click", function () {
-            $(this).find("i").toggleClass("up");
-        });
-
-
-        $(document).on("click", function (event) {
-            if (!$(event.target).closest(".dropdown").length) {
-                $(".dropdownToggle i").removeClass("up");
-            }
-        });
-
-
-
-        $(".dropdownToggle").on("click", function () {
-            $(this).find("i").toggleClass("up");
-        });
-
-
-        $(document).on("click", function (event) {
-            if (!$(event.target).closest(".dropdown").length) {
-                $(".dropdownToggle i").removeClass("up");
-            }
-        });
-
-
-        $(".dropdownToggle").hover(
-            function () {
-                $(this).find(".rotate-icon").addClass("up");
-            },
-            function () {
-
-                if (!$(this).hasClass("clicked")) {
-                    $(this).find(".rotate-icon").removeClass("up");
-                }
-            }
-        );
-
-        // Click outside to close
-        $(document).on("click", function (event) {
-            if (!$(event.target).closest(".dropdown").length) {
-                $(".dropdown-toggle").removeClass("clicked");
-                $(".rotate-icon").removeClass("up");
-            }
-        });
-
-        let currentIndex = 0;
-        const $carousel = $(".Carousel");
-        const $cards = $(".Card");
-        const totalCards = $cards.length;
-
-        function moveNext() {
-            currentIndex = (currentIndex + 1) % totalCards;
-            let translateX = -currentIndex * 100 + "%";
-            $cards.each(function(index) {
-                $(this).css("transform", "translateX(" + translateX + ")");
-            });
-        }
-        setInterval(moveNext, 5000);
-
-    });
-
-</script>
+<script src="./assets/js/scripts.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

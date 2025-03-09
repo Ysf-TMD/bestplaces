@@ -26,11 +26,31 @@ body {
     color: white;
     text-decoration: none;
 }
+.btn-red-bordred{
+    border: 3px solid #EE1C25 !important;
+    color: #EE1C25;
+    background-color: white !important;
+    text-decoration: none;
+}
+.btn-red-bordred:hover{
+    border: 3px solid #EE1C25 !important;
+    color: white;
+    background-color: #EE1C25 !important;
+    text-decoration: none;
+}
 .bg-blue{
     background-color: #112748;
     color: white !important;
-
-
+}
+.bg-red{
+    background-color: #EE1C25;
+    color: white ;
+}
+.text-red {
+    color: #EE1C25;
+}
+.title{
+    font-size: 32px
 }
 .itemDiv:first-child{
     display: block;
@@ -40,38 +60,52 @@ body {
     display: none;
 }
 .dropDownLink{
-    margin: 5px 0px;
+    margin: 1px 0px;
 }
 .dropDownLink:hover a {
-    background-color: aliceblue;
-    color: black !important;
+    background-color: #EE1C25;
+    color: #ffffff !important;
 
 }
 .dropdown-menu{
-    background-color: #112748 !important;
-    color: #e3e6ea !important
+    color: black !important
 }
-.rotate-icon {
+/*.rotate-icon {
     transition: transform 0.4s ease-in-out;
 }
 
 .rotate-icon.up {
     transform: rotate(-180deg);
-}
+}*/
 .linkMenu {
     color: #3c434e !important;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 2px;
 }
-.linkMenu:hover {
-    background-color: #ed444c; !important;
-    color: white !important;
+
+.linkMenu {
+    position: relative; /* Nécessaire pour positionner le pseudo-élément */
+    text-decoration: none; /* Si tu veux supprimer toute décoration de lien */
 }
-.logo:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
+
+.linkMenu::before {
+    content: ""; /* Nécessaire pour créer un pseudo-élément */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0; /* Initialement la largeur est de 0 */
+    height: 2px;
+    background-color: #ed444c;
+    border-radius: 3px;
+    transition: width 0.5s ease-in-out, left 0.4s ease-in-out;
 }
+
+.linkMenu:hover::before {
+    width: 100%; /* Lorsque l'élément est survolé, la largeur devient 100% */
+    left: 0; /* L'élément part du centre (50%) et s'étend jusqu'aux bords */
+}
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -79,17 +113,23 @@ body {
     display: none;
     z-index: 1000;
 }
+/*
 .rotate-icon {
     transition: transform 0.3s ease-in-out;
 }
 
 .rotate-icon.up {
     transform: rotate(-180deg);
+}*/
+.rotate-icon {
+    transition: transform 0.3s ease-in-out; /* Effet fluide */
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
 
-
-.nav-item:hover .dropdown-menu {
+.nav-item:hover  {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -106,31 +146,6 @@ body {
     }
 }
 
-
-
-/* banner continu */
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.slider {
-    display: inline-block;
-    animation: slide1 70s linear infinite ;
-}
-
-.slider img {
-    display: inline-block;
-    margin-right: 10px;
-    width: 200px;
-    height: auto;
-}
-
-@keyframes slide1 {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(100%); }
-}
 
 
 /*carousel*/
@@ -152,10 +167,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
-#playVideoButton:hover{
-    scale: 120%;
-    transition: 1s ease-in-out ;
-}
+
 .homeImage {
     animation: animateImageHome 3s infinite ease-in-out;
 }
@@ -174,7 +186,7 @@ body {
   .values-section {
     background-color: #f8f9fa;
 }
-
+/*
 .card {
     transition: transform 0.3s ease;
     border-radius: 12px;
@@ -182,8 +194,23 @@ body {
 
 .card:hover {
     transform: translateY(-10px);
+}*/
+.img-container {
+    overflow: hidden;
 }
 
+.img-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.02); /* Zoom à 110% */
+}
+.btnSuccess:hover{
+    background-color: white;
+    color: #EE1C25 !important;
+    border-color: #112748!important;
+}
 .card img {
     max-width: 100%;
     height: auto;
@@ -254,4 +281,338 @@ body {
 .scroll-top.show {
     display: flex;
     opacity: 1;
+}
+
+/* tags key words for search input */
+.tag{
+    background-color: #EE1C25;
+    color:white;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid #EE1C25;
+}
+.tag:hover{
+    background-color: white;
+    color: #EE1C25;
+    border: 1px #EE1C25 solid ;
+}
+/*scroll bar */
+/* Scrollbar pour WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre */
+    height: 10px; /* Hauteur pour scrollbar horizontale */
+    border-radius: 10px; /* Arrondi général */
+}
+
+/* Track (arrière-plan de la barre) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de fond */
+    border-radius: 10px; /* Arrondi du track */
+}
+
+/* Barre de défilement avec arrondi */
+::-webkit-scrollbar-thumb {
+    background: #dc3545; /* Couleur de la barre (rouge Bootstrap) */
+
+    transition: background 0.3s ease;
+}
+
+/* Effet au survol */
+::-webkit-scrollbar-thumb:hover {
+    background: #112748; /* Rouge plus foncé */
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.banner {
+    min-height: 300px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./assets/banners/banner.jpg');
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Ajout d'un flou en arrière-plan */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    z-index: 0;
+}
+
+/* Titre centré au-dessus */
+.banner h1 {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btn_contact_us{
+    background-color: white !important;
+    color:#EE1C25 !important;
+    font-weight: bold ;
+
+    padding: 5px ;
+    border: white 2px solid ;
+}
+.lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 3px;
+}
+
+
+.line {
+    width: 2.5cm;
+    height: 3px;
+    background-color: #EE1C25;
+}
+
+.small {
+    width: 2cm;
+}
+
+.smaller {
+    width: 1cm;
+}
+.smaller_x {
+    width: 0.5cm;
+}
+
+
+/*slider page about us */
+/*--------------------------------------*/
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 20%; /* Affiche 5 images par défaut */
+    box-sizing: border-box;
+    margin: 0 5px ;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #EE1C25 !important;
+
+    color: white !important;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-container:hover .prev-btn,
+.slider-container:hover .next-btn {
+    opacity: 1;
+}
+
+/* Media Queries pour les écrans mobiles */
+@media (max-width: 768px) {
+    .slide {
+        min-width: 100%; /* Affiche 1 image à la fois sur mobile */
+    }
+    .slide img  {
+        align-content: center/* Affiche 1 image à la fois sur mobile */
+    }
+
+    .prev-btn,
+    .next-btn {
+        opacity: 1; /* Toujours afficher les boutons sur mobile */
+        background-color: rgba(0, 0, 0, 0.7); /* Plus visible sur mobile */
+        padding: 8px; /* Taille réduite pour les petits écrans */
+    }
+
+    .prev-btn {
+        left: 5px; /* Ajuster la position sur mobile */
+    }
+
+    .next-btn {
+        right: 5px; /* Ajuster la position sur mobile */
+    }
+    .section-how_it_works{
+        min-height: 30px;
+    }
+    .section-how_it_works2{
+        min-height: 30px !important;
+    }
+}
+
+/* Media Queries pour les écrans plus larges */
+@media (min-width: 769px) {
+    .slide {
+        min-width: 20%; /* Affiche 5 images à la fois sur les grands écrans */
+    }
+
+}
+.divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.bubble {
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Couleur des bulles */
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000; /* Couleur de la ligne */
+}
+li a .active{
+    color: white !important     ;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .top-image {
+    position: absolute;
+    top: 140px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(238, 2, 2, 0.2);
+    left: 18%;
+    transform: translateX(-50%);
+    width: 100px; /* Ajuste la taille selon ton besoin */
+    z-index: 2;
+}
+
+.image-container .bottom-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hovredSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.hovredSection img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hovredSection .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(234, 206, 206, 0.7); /* Fond sombre */
+    color: #090000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.hovredSection:hover img {
+    opacity: 0;
+}
+
+.hovredSection:hover .hover-content {
+    opacity: 1;
+}
+.flex-span {
+    width: calc(50% - 10px); /* 2 par ligne, moins l'espace */
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .flex-span {
+        width: 100%; /* 1 par ligne sur mobile */
+    }
+}
+
+.nav-pills .nav-link.active {
+    background-color: red;
+    color: white;
+}
+.nav-pills .nav-link {
+    color: black;
+}
+
+
+
+/* style d'images dans la page casestudies.html*/
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+
+}
+
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #E62927 !important;
+    z-index: 1;
+}
+
+.image-wrapper img {
+    display: block;
+    position: relative;
+    z-index: 2;
+    background-color: white !important;
 }
