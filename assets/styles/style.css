@@ -616,3 +616,21 @@ li a .active{
     z-index: 2;
     background-color: white !important;
 }
+
+.logoCompanies {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* Fixe une hauteur pour le logo */
+    width: auto; /* Ajuste la largeur en fonction du contenu */
+}
+.logoCompanies img {
+    max-height: 100%; /* Permet à l'image de s'adapter à la hauteur fixée */
+    width: auto; /* Conserve le ratio de l'image */
+}

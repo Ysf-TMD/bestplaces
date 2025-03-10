@@ -36,6 +36,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    <script src="./assets/js/webinarCarousel.js" async></script>
+    <link rel="stylesheet" href="./assets/styles/webinarSlider.css">
 </head>
 <style>
 
@@ -1051,716 +1054,413 @@
     </div>
 </div>
 <!-- Modal end  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-<!-- first block main content-->
-<div class="container-md container-fluid  my-2 py-2">
-    <div class="row">
-        <div class="col-md d-flex flex-column align-items-center justify-content-center">
-            <div class="container   my-5">
-                <h1 style="" class="h1 p-2 title my- fw-bold ">
-                    Begin your journey <br>
-                    <span class="bling-text text-red fs-1"> As Best Place to Work</span>
+<style>
+    .container-fluid .col-md-8 {
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* Pour IE */
+        scrollbar-width: none;  /* Pour Firefox */
+    }
 
-                </h1>
-                <div class="container  text-muted">
-                    <h6 class="fs-6">Get certified today and unlock a wide range of exclusive benefits</h6>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8  d-flex justify-content-around mx-auto">
-                                <button class="btn-red p-3 my-3    border-0   my-1">Get Certified Now <i
-                                        class="fa-solid mx-1 fa-arrow-right"></i></button>
-                                <button class=" border-1 border-danger border p-3 my-3    bg-transparent text-red fw-bold   my-1">
-                                    Play video <i class="fa-solid fa-circle-play mx-1"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    /* Masquer la barre de défilement Webkit (Chrome, Safari, Edge) */
+    .container-fluid .col-md-8::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+<section class="container-fluid text-center ">
+    <h3 class="text-red fw-bold text-uppercase py-4 my-4 ">Join the list of certified companies today !</h3>
+    <div  class=" mb-3 container-fluid mx-auto text-start">
+        <div class="row">
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Novo%20nordisk%20HD.png" alt="Logo 1"></div>
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Dell.png" alt="bestplacestoworkfor_"></div>
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Mdcs.png" alt="bestplacestoworkfor_"></div>
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Alcon_0.png" alt="bestplacestoworkfor_"></div>
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Sapin.png" alt="bestplacestoworkfor_"></div>
+            <div class="col-md"><img class="img-fluid" src="./assets/images/certifiedCompanies/Novartis.png" alt="bestplacestoworkfor_"></div>
+        </div>
+    </div>
+    <div class="container-fluid pt-4">
+        <button class="bg-white px-3 py-2 border-2 border-danger rounded-0    text-red">
+            View our certified companies
+        </button>
+    </div>
+</section>
+
+
+
+<section class="container-fluid ">
+    <div class="row py-5" style="min-height: 600px">
+        <!-- Première colonne avec image de fond et texte en haut -->
+        <div class="col-md position-relative" style="background-image: url('./assets/images/privacy-policy-bow8wt-e34nwp.webp'); background-size: cover; background-position: center; max-height: 400px;">
+            <div class="container-fluid text-white position-relative z-index-2 p-3">
+                <h3 class="py-5">
+                    Start your journey to high performance
+                </h3>
+                <p>
+                    We help organizations transform the culture of their workplace by identifying strengths, uncovering weaknesses and providing advice and guidance to spark change and inspire people. We manage certification programs across Europe, LATAM, Africa, Middle East, Asia and America that are looking for remarkable organizations to celebrate as Best Places to Work.
+                </p>
             </div>
         </div>
-        <div class="col-md  ">
-            <div class="row justify-content-end">
-                <div class="col-md-8 ">
-                    <img src="./assets/images/home/imgHome.webp" alt="home image" loading="lazy"
-                         class="img-fluid homeImage ">
-                </div>
+
+        <!-- Deuxième colonne avec image de fond et bouton -->
+        <div class="col-md position-relative" style="background-image: url('./assets/images/banner-how-it-works-7vkztl.jpg'); background-size: cover; background-position: center; max-height: 400px;">
+            <div class="d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle z-index-2">
+                <button class="bg-red border-1 border-white rounded-0 px-3 py-2 text-white">
+                    Watch our video
+                </button>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- View Our latest News start -->
-<div class="container-fluid">
-    <section class="values-section py-3">
-        <div class="container ">
-            <h2 class="text-start text-uppercase mb-3 fw-bold" style="color: #EE1C25;">View Our latest News</h2>
-            <div class="row g-4">
-                <div class="col-md-7">
-                    <!-- Card 1 -->
-                    <div class="card  border-0 shadow-sm">
-                        <div class="card-body img-container p-4">
-                            <div class="container-fluid text-center">
-                                <img src="./assets/images/news/returo.png" alt="Collaboration" class="img-fluid object-fit-contain mb-4" style="height: 200px;">
-                            </div>
-                            <h2 class="card-title text-capitalize  mb-3 " >RetuRO DRS </h2>
-                            <div class="row">
-                                <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto d-flex justify-content-between ">
-                                    <span>
-                                        <i class="fa-solid fa-clock"></i> 15min read
-                                    </span>
-                                    <span>
-                                        <i class="fa-solid fa-eye"></i> 2K views
-                                    </span>
-                                    <span>
-                                        <i class="fa-solid fa-comment-dots"></i> comments
-                                    </span>
-                                    <span>
-                                        <i class="fa-solid fa-share"></i> 1.5k share
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="card-text text-start text-muted border-top  mt-2">
-                                RetuRO DRS recognized as a Best Place to Work in Romania for 2024-2025
-                                <a href="" class=""> ...  read more</a>
-                            </p>
-                        </div>
-                    </div>
-                    <section class="container-fluid text-start mt-2">
-                        <p class=" h5">
-                            Stay informed with our latest updates, industry insights, and company achievements. Our news section brings you exclusive stories, expert perspectives, and key announcements to keep you ahead of the curve. Explore our latest articles and stay connected with the innovations shaping our industry.
-                            Let me know if you'd like any refinements! 🚀
-                        </p>
-                    </section>
+<section class="container-fluid ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="container-fluid text-center">
+                    <img src="./assets/images/measure-benchmark-engagement-6kzjfu.jpg" alt="bestplacestowork_" class="img-fluid">
                 </div>
-                <div class="col-md">
-                   <div class="row px-2" style="max-height: 580px ; overflow-y: auto" >
-                       <!--card 1 start -->
-                       <article class="card mb-3" style="max-width: 540px;">
-                           <div class="row g-0">
-                               <div class="col-md-4 d-flex align-items-center">
-                                   <img src="./assets/images/news/trialpro.png" class="img-fluid rounded-start" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                   <div class="card-body">
-                                       <h4 class="card-title border-bottom text-capitalize">
-                                           Trial Pro
-                                       </h4>
-                                       <p class="text-start text-muted">
-                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
-                                       </p>
-                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
-                                            <div class="d-flex justify-content-between">
-                                                <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
-                                            </div>
-
-                                            <div class="d-flex justify-content-between">
-                                                <span>
-                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
-                                                </span>
-                                                <span>
-                                                     <i class="fa-solid fa-share"></i> 1.5k share
-                                                </span>
-                                            </div>
-                                       </div>
-                                        <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
-                                       </p>
-                                   </div>
-                               </div>
-                           </div>
-                       </article>
-                       <!--card 1 end -->
-                       <!--card 2 start -->
-                       <article class="card mb-3" style="max-width: 540px;">
-                           <div class="row g-0">
-                               <div class="col-md-4 d-flex align-items-center">
-                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                   <div class="card-body">
-                                       <h4 class="card-title border-bottom text-capitalize">
-                                          AstraZeneca
-                                       </h4>
-                                       <p class="text-start text-muted">
-                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
-                                       </p>
-                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
-                                           <div class="d-flex justify-content-between">
-                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
-                                           </div>
-
-                                           <div class="d-flex justify-content-between">
-                                                <span>
-                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
-                                                </span>
-                                               <span>
-                                                     <i class="fa-solid fa-share"></i> 1.5k share
-                                                </span>
-                                           </div>
-                                       </div>
-                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
-                                       </p>
-                                   </div>
-                               </div>
-                           </div>
-                       </article>
-                       <!--card 2 end -->
-                       <!--card 2 start -->
-                       <article class="card mb-3" style="max-width: 540px;">
-                           <div class="row g-0">
-                               <div class="col-md-4 d-flex align-items-center">
-                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                   <div class="card-body">
-                                       <h4 class="card-title border-bottom text-capitalize">
-                                          AstraZeneca
-                                       </h4>
-                                       <p class="text-start text-muted">
-                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
-                                       </p>
-                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
-                                           <div class="d-flex justify-content-between">
-                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
-                                           </div>
-
-                                           <div class="d-flex justify-content-between">
-                                                <span>
-                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
-                                                </span>
-                                               <span>
-                                                     <i class="fa-solid fa-share"></i> 1.5k share
-                                                </span>
-                                           </div>
-                                       </div>
-                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
-                                       </p>
-                                   </div>
-                               </div>
-                           </div>
-                       </article>
-                       <!--card 2 end -->
-                       <!--card 2 start -->
-                       <article class="card mb-3" style="max-width: 540px;">
-                           <div class="row g-0">
-                               <div class="col-md-4 d-flex align-items-center">
-                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                   <div class="card-body">
-                                       <h4 class="card-title border-bottom text-capitalize">
-                                          AstraZeneca
-                                       </h4>
-                                       <p class="text-start text-muted">
-                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
-                                       </p>
-                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
-                                           <div class="d-flex justify-content-between">
-                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
-                                           </div>
-
-                                           <div class="d-flex justify-content-between">
-                                                <span>
-                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
-                                                </span>
-                                               <span>
-                                                     <i class="fa-solid fa-share"></i> 1.5k share
-                                                </span>
-                                           </div>
-                                       </div>
-                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
-                                       </p>
-                                   </div>
-                               </div>
-                           </div>
-                       </article>
-                       <!--card 2 end -->
-                       <!--card 2 start -->
-                       <article class="card mb-3" style="max-width: 540px;">
-                           <div class="row g-0">
-                               <div class="col-md-4 d-flex align-items-center">
-                                   <img src="./assets/images/news/astra.jpg" class="img-fluid rounded-start" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                   <div class="card-body">
-                                       <h4 class="card-title border-bottom text-capitalize">
-                                          AstraZeneca
-                                       </h4>
-                                       <p class="text-start text-muted">
-                                           Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025
-                                       </p>
-                                       <div class="col-12 my-1 col-md-12 col-lg-12 mx-auto ">
-                                           <div class="d-flex justify-content-between">
-                                               <span><i class="fa-solid fa-clock"></i> 15min read</span> <span> <i class="fa-solid fa-eye"></i> 2K views</span>
-                                           </div>
-
-                                           <div class="d-flex justify-content-between">
-                                                <span>
-                                                     <i class="fa-solid fa-comment-dots"></i> 50 comments
-                                                </span>
-                                               <span>
-                                                     <i class="fa-solid fa-share"></i> 1.5k share
-                                                </span>
-                                           </div>
-                                       </div>
-                                       <p class="card-text text-end"><small class="text-muted text-center">Last updated 3 mins ago</small>
-                                       </p>
-                                   </div>
-                               </div>
-                           </div>
-                       </article>
-                       <!--card 2 end -->
-                   </div>
+                <div class="line small mx-auto  my-3"></div>
+                <p class="text-center">
+                    BEGIN YOUR CERTIFICATION JOURNEY AND HAVE YOUR COMPANY RECOGNIZED AS A BEST PLACE TO WORK
+                </p>
+            </div>
+            <div class="col-md">
+                <div class="container-fluid text-center">
+                    <img src="./assets/images/begin-your-certification-journey-393vn3.jpg" alt="bestplacestowork_" class="img-fluid">
                 </div>
+                <div class="line small mx-auto  my-3"></div>
+                <p class="text-center">
+                    ASSESS YOUR EMPLOYEE EXPERIENCE AND BENCHMARK YOUR HR PRACTICES AGAINST THE BEST STANDARDS
+                </p>
             </div>
-        </div>
-    </section>
-</div>
-<!-- View Our latest News end -->
-
-
-<!--section why choose us start -->
-<div class="container my-3 py-3">
-    <div class="row justify-content-between  img-container p-2 text-center">
-        <div class="row mb-4">
-            <h2 class="text-start text-uppercase text-red fw-bold" >Why Choose Us</h2>
-            <p class="h2 text-start fw-bold ">
-                Empowering Your Business for Sustainable and Exponential Growth.
-            </p>
-        </div>
-        <div class="col-md-3 text-start">
-            <div class="row">
-                <h2 class="text-red h2"><i class="fa-solid fa-arrow-up-right-dots"></i></h2>
-                <h4>Best In Industy</h4>
-                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
-            </div>
-            <div class="row">
-                <h2 class="text-red h2"><i class="fa-solid fa-medal"></i></h2>
-                <h4>Award Winning</h4>
-                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
-            </div>
-        </div>
-        <div class="col-md-4  ">
-            <img src="./assets/images/chooseUs/choose_us.jpg" alt="bestplacestoworkfor_why_choose_us_image" class="img-fluid w-100 ">
-        </div>
-        <div class="col-md-3 text-start">
-            <div class="row " >
-                <h2 class="text-red"><i class=" fa-solid fa-users " ></i></h2>
-                <h4>Satisfied Clients 90%</h4>
-                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
-            </div>
-            <div class="row " >
-                <h2><i class="fa-solid fa-phone text-red"></i></h2>
-                <h4 class="">24/7 Support</h4>
-                <p class="h6 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas?</p>
+            <div class="col-md">
+                <div class="container-fluid text-center">
+                    <img src="./assets/images/leverage-your-certification-zqodtu.jpg" alt="bestplacestowork_" class="img-fluid">
+                </div>
+                <div class="line small mx-auto  my-3"></div>
+                <p class="text-center">
+                    CELEBRATE YOUR ACHIEVEMENT AS A CERTIFIED ORGANIZATION
+                </p>
             </div>
         </div>
     </div>
-</div>
-<!--section why choose us end -->
+</section>
 
 
-
-<!--section our success stories start  -->
-<section class="container-fluid mt-5 bg-red">
-    <div class="container ">
-        <div class="row mb-4">
-            <h2 class="text-start text-uppercase text-red fw-bold " >Inspiring Success Stories: Real Achievements, Real Impact.</h2>
-            <div class="row">
-                <div class="col-md">
-                    <h1 class="fw-bold text-black">Our Success Stories :</h1>
-                    <p class="h4 text-start  d-flex align-items-center  succesText text-justify ">
-                        Discover the remarkable journeys of businesses that have thrived with our expertise and support. Our success stories showcase how we’ve helped clients overcome challenges, seize opportunities, and achieve exponential growth. Each story reflects our commitment to delivering innovative solutions and exceptional results, demonstrating the impact of our partnership on their success.
+<section class="container-fluid py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="container-fluid">
+                    <img src="./assets/images/explore-understand-act-3z5my5-n1w64n.avif" alt="bestplacestowork_" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="container-fluid">
+                    <h3 class="py-3">
+                        Explore. Understand. Act.
+                    </h3>
+                    <p class="text-start">
+                        Our solutions transform your data into actionable insights, giving you a unique and accurate picture of the employee experience and the quality of your HR practices against the best standards
                     </p>
-                    <div class="row">
-                        <div class="col-md">
-                            <button class="text-white col-md-7 mt-3 p-3   shadow-none btnSuccess border-white  rounded-2 btn fw-bold h2 bg-red text-red ">View Our Liste Of Success Stories <i class="fa-solid fa-medal  mx-2 "></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="row p-1 img-container">
-                        <div class="col-md mb-2 ">
-                            <img src="./assets/images/home/success.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
-                        </div>
-                        <div class="col-md mb-2 ">
-                            <img src="./assets/images/home/success2.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
-                        </div>
-                    </div>
-                    <div class="row img-container p-1">
-                        <div class="col-md mb-2">
-                            <img src="./assets/images/home/success3.jpg" alt="bestplacestowork_success_story_image" class=" img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
-                        </div>
-                        <div class="col-md mb-2 ">
-                            <img src="./assets/images/home/success4.jpg" alt="bestplacestowork_success_story_image" class="img-fluid img-thumbnail" style="max-height: 350px ; min-height: 250px">
-                        </div>
+                    <div class="">
+                        <a href="#" class="nav-link">
+                            <button class=" border-2  rounded-0 border  border-danger px-3 py-2 text-red bg-white">
+                                Learn More
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--section our success stories end  -->
 
-
-<!-- video section-->
-<div class="container-fluid my-3 py-3">
-    <div class="row">
-        <h1 class="container  text-center my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
-        <div class="col-md text-center col-sm-6 col-12 my-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias ducimus exercitationem minima necessitatibus nobis quia quibusdam sapiente sunt tenetur.</p>
-            <svg class="faq-arrow mt-3 " style="color: #EE1C25 ; transform: rotate(25deg)" width="280px" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
-            </svg>
-
-            <div class="container">
-                <a href="#" class="btn btn-red position-absolute mt-5 me-2 rounded-pill  text-white  fw-bold">Ready to Know more <i class="fa-solid fa-question"></i> </a>
+<section class="container-fluid py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3 class="text-start py-3">
+                    Best Places to Work certified organizations outperform the market average
+                </h3>
+                <p class="text-start">
+                    Our research proves that certified companies drive consistent long-term business performance through high employee engagement, engaging leadership and talent focus. Becoming a certified organization means your employees are inspired, engaged and motivated to do their best, every day, and anywhere
+                </p>
+            </div>
+            <div class="col-md">
+                <img width="" src="./assets/images/Best%20Places%20to%20Work%20certified%20organizations%20outperform%20the%20market%20average-vuju0j.png" alt="bestplacestoworkfor_" class="img-fluid">
             </div>
         </div>
-        <div class="col-md-7 col-12 col-sm-6">
-            <section class="video-section my-sm-2 my-2 mx-auto">
-                <div class="col-md-8  mt-5 mx-auto ">
-                    <div class="video-wrapper">
-                        <div class="ratio ratio-16x9">
-                            <video id="videoPlayer" class="rounded shadow"  poster="assets/images/poster.JPG" controls preload="auto" loading="lazy">
-                                <source src="./assets/videos/Best%20Places%20To%20Work%20Certification%20Program.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
     </div>
-</div>
+</section>
 
 
-
-<div class="container">
-    <h1 class="container-fluid text-center my-3 py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, iusto.</h1>
-    <div class="row">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6   col-sm-6 col-md-2 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/aia_0.png"  class="img-fluid" alt="Card 1" >
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/alten%20logo.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/Alcon_0.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/servier.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/Mdcs.png" class="img-fluid img-fluid" alt="Card 1" width="500">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/Dell.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <img src="./assets/images/carousel/Dell.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6  col-md-3 mb-4">
-                    <div class="card bg-transparent  border-0">
-                        <img src="./assets/images/carousel/Dell.png" class="card-img-top img-fluid" alt="Card 1">
-                    </div>
-                </div>
+<section class="container-fluid py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1 class=" text-red">
+                    +40%
+                </h1>
+                <p class="text-red">
+                    Job applications per job opening compared to the market average
+                </p>
+            </div>
+            <div class="col-md">
+                <h1 class="text-red">
+                    +35%
+                </h1>
+                <p class="text-red">
+                    Lower cost per hire at certified companies
+                </p>
+            </div>
+            <div class="col-md">
+                <h1 class="text-red">
+                    +26%
+                </h1>
+                <p class="text-red">
+                    Retention rate compared to non-certified organizations
+                </p>
+            </div>
+            <div class="col-md">
+                <h1 class="text-red">
+                    +12%
+                </h1>
+                <p class="text-red">
+                    Higher business performance compared to the market average
+                </p>
             </div>
         </div>
-
     </div>
-</div>
+</section>
 
-
-
-
-<!-- what make us spécial-->
-<div class="container-fluid  my-2">
-    <div class="row">
-        <section style="background-color: #f8f9fa ;" class="features-section   py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class=" position-relative">
-                            <div class=" homeImage rounded-4 p-4">
-                                <img src="./assets/images/alt-features.png" alt="Mobile App" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 ">
-                        <div class="row">
-                            <div class="col-md">
-                                <div class="feature-item shadow shadow-sm  d-flex align-items-start mb-4">
-                                    <div  style="background-color: #112748; color: white" class="text-center rounded-3   p-2">
-                                        <h3 class="h1 mb-3 p-3">What Make Us Speacial <i class="fa-solid fa-arrow-up-right-dots"></i></h3>
-                                        <p class="text-white p-2  mb-0">Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md">
-                                <div class="feature-item d-flex align-items-start mb-4">
-                                    <div class="feature-icon me-3">
-                                        <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M12 6V18M6 12H18" stroke="currentColor" stroke-width="2"/>
-                                        </svg>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5 mb-2">Labore consequatur</h3>
-                                        <p class="text-muted mb-0">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="feature-item d-flex align-items-start mb-4">
-                                    <div class="feature-icon me-3">
-                                        <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"/>
-                                        </svg>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5 mb-2">Molestiae dolor</h3>
-                                        <p class="text-muted mb-0">Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md">
-                                <div class="feature-item d-flex align-items-start mb-4">
-                                    <div class="feature-icon me-3">
-                                        <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5C15 6.10457 14.1046 7 13 7H11C9.89543 7 9 6.10457 9 5Z" stroke="currentColor" stroke-width="2"/>
-                                        </svg>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5 mb-2">Ullamco laboris nisi</h3>
-                                        <p class="text-muted mb-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="feature-item d-flex align-items-start mb-4">
-                                    <div class="feature-icon me-3">
-                                        <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2"/>
-                                        </svg>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5 mb-2">Beatae veritatis</h3>
-                                        <p class="text-muted mb-0">Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+<section class="container-fluid py-5">
+    <div class="container">
+        <div class="row row-cols-md-4">
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/servier.png" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/alten%20logo.png" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/aia_0.png" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/utec%202023%20V.png" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/JP%20Morgan.png" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/Zoetis.jpg" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/Mondelez_0.jpg" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md my-3 p-3">
+                <div class=" text-center container-fluid">
+                    <a href="#" class="nav-link">
+                        <img src="./assets/images/successStoriesImages/ALCON_0.jpg" alt="bestplacestoworkfor_" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="container-fluid col-sm-12 col-md-12">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/images/celebrationEvents/Tunisie%202019-h9059g.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/celebrationEvents/slider%20celebration%20romania%202019-cmpm1z.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/mainSlider/img1.avif" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+<section class="container-fluid py-5">
+    <div class="container text-center">
+        <button class="text-red bg-white px-3 py-2 rounded-0 border-2 border-danger">
+            Our success stories
         </button>
     </div>
-</div>
+</section>
+
+<section class="container-fluid py-5 " style="background-image: url('./assets/images/webinars-bg-hp2eth.avif') ; background-repeat: no-repeat" >
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4 col-12 col-sm-12 col-lg-4  p-4 bg-red">
+                <h3 class="text-white fw-bold">
+                    Connect. Learn. Inspire.
+                </h3>
+                <p>
+                    Join our upcoming webinars to learn about the latest best practices and trends around the employee experience
+                </p>
+                <div class="container-fluid">
+                    <button class="bg-white rounded-0 border-0 px-3 py-2">View all webinars</button>
+                </div>
+            </div>
+            <div class="col-md"></div>
+        </div>
+    </div>
+</section>
 
 
 
+<section class="container-fluid py-5">
+    <div class="container">
+        <h3 class="text-uppercase fw-bold text-red text-center">
+            Recently Certified Organizations
+        </h3>
+        <div class="row">
+            <div class="col-md">
+                <div class="container my-4 mt-4">
+                    <div class="row g-3">
 
-
-
-
-
-<!-- footer -->
-<div class=" mt-3">
-    <div style="background-color: #112748 !important; " class="dropdown-menu2  bg-dark border-0  pt-3 mt-0" >
-        <div class="container-fluid col-md-11 mx-auto">
-            <div class="row">
-                <div class="col-md-3 border-end border-secondary">
-                    <div class="nav-item  dropDownLink " >
-                        <a href="./our_certification_programs.html" class="text-white nav-link p-3   rounded-2" > <i class="fa-solid fa-medal"></i> Our certification programs <i class="fa-solid mx-1 fa-arrow-right"></i></a>
-                    </div>
-                    <div class="nav-item  dropDownLink" >
-                        <a href="#" class="text-white nav-link p-3  rounded-2">
-                            <i class="fa-solid fa-handshake"></i> Our workplace solutions   <i class="fa-solid mx-1 fa-arrow-right"></i> </a>
-                    </div>
-                    <div class="nav-item  dropDownLink" >
-                        <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid fa-book-bookmark"></i> success stories <i class="fa-solid mx-1 fa-arrow-right"></i></a>
-                    </div>
-                    <div class="nav-item  dropDownLink" >
-                        <a href="#" class="text-white nav-link p-3  rounded-2"> <i class="fa-solid  fa-briefcase"></i> Case studies <i class="fa-solid mx-1  fa-arrow-right"></i></a>
+                        <!-- Carte 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <img src="./assets/images/default-image.jpg" style="max-height: 300px ; min-height: 300px" class="card-img-top" alt="Gulf Hotels Group">
+                                    <div class="logoCompanies">
+                                        <img src="./assets/images/GiLYATP23CfSUWn0.png" alt="Logo" width="60">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title"> <i class="fa-solid fa-building"></i> Gulf Hotels Group</h5>
+                                    <p> <i class="fa-solid fa-location-dot"></i> Multinational</p>
+                                    <p class=""> <i class="fa-solid fa-flask"></i>  Hospitality & Restaurants</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carte 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="position-relative" >
+                                    <img src="./assets/images/xh9bL2vMWECHm08T.jpg" style="max-height: 300px ; min-height: 300px" class="card-img-top" alt="Gulf Hotels Group">
+                                    <div class="logoCompanies">
+                                        <img src="./assets/images/bctzfF97egjCPxAo.png" alt="Logo" width="60">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title"> <i class="fa-solid fa-building"></i> Gulf Hotels Group</h5>
+                                    <p> <i class="fa-solid fa-location-dot"></i> Multinational</p>
+                                    <p class=""> <i class="fa-solid fa-flask"></i>  Hospitality & Restaurants</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carte 2 -->
+                        <div class="col-md-4">
+                            <a href="" class="nav-link">
+                                <div class="card">
+                                    <div class="position-relative">
+                                        <img src="./assets/images/default-image.jpg" style="max-height: 300px ; min-height: 300px" class="card-img-top" alt="Gulf Hotels Group">
+                                        <div class="logoCompanies">
+                                            <img src="./assets/images/KuPxhEVRjCqb3enY.png" alt="Logo" width="60">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> <i class="fa-solid fa-building"></i> Gulf Hotels Group</h5>
+                                        <p> <i class="fa-solid fa-location-dot"></i> Multinational</p>
+                                        <p class=""> <i class="fa-solid fa-flask"></i>  Hospitality & Restaurants</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7  ps-4 border-end border-secondary">
-                    <div class="row  itemDiv" >
-                        <div class="container-fluid">
-                            <div class="row text-white ">
-                                <h4 class="text-white text-center">Certify your organization and build a competitive advantage by putting your culture first</h4>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!-- Right Column -->
-                            <div class="col-md ">
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                            </div>
-                            <!-- Right Column -->
-                            <div class="col-md ">
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                            </div>
-                            <!-- Right Column -->
-                            <div class="col-md ">
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Multi-lingual Surveys</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Security</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">Workflows</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">White Labelling</a>
-                                <a href="#" class="d-block text-white text-decoration-none mb-3">All features →</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row  itemDiv" data-index="">
-                        <div class="container-fluid">
-                            <div class="row text-white ">
-                                <h4 class="text-white text-center">Certify 2 your organization and build a competitive advantage by putting your culture first</h4>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="col-md" >
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                Learn how the Best Place to Work certification program can help you boost your HR performance
-                            </a>
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                Learn how to develop, engage your employees to create an exceptional workplace and boost your business performance
-                            </a>
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                            </a>
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">Executive Dashboard</a>
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                Discover how other organizations like yours got the certification
-                            </a>
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                Learn how other organizations succeeded in achieving the Best Place to Work certification and how it impacted their organizations
-                            </a>
-                        </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <a href="#" class="nav-lik">
+                <button class="text-red bg-white rounded-0 border-2 border-danger px-3 py-2">
+                    View all organizations
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
 
-                    </div>
-                    <div class="row  itemDiv" data-index="">
-                        <div class="container-fluid">
-                            <div class="row text-white ">
-                                <h4 class="text-white text-center">Certify success</h4>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="col-md" >
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                to success , our success stories
-                            </a>
 
-                        </div>
 
-                    </div>
-                    <div class="row  itemDiv" data-index="">
-                        <div class="container-fluid">
-                            <div class="row text-white ">
-                                <h4 class="text-white text-center">Certify Case </h4>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="col-md" >
-                            <a href="#" class="d-block text-white text-decoration-none mb-3">
-                                to our case studies , go
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md  ">
-                    <div class="card  rounded-4">
-                        <div class="card-body w-100">
-                            <h5 class="card-title ">Contact Info</h5>
-                            <p class="card-text ">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi eaque magnam nulla porro quas quasi quod sint ut velit.
+<section class="container-fluid bg-light py-5">
+    <div class="container">
+        <h3 class="text-center text-uppercase fw-bold text-red">
+            Customers appreciate the certification experience
+        </h3>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <p class="text-center">
+                                "We are thrilled to have received the Best Places to Work recognition globally, alongside some of the top technology and healthcare companies. Our wins are testament to our commitment to our culture, employee satisfaction, and creating a safe, equitable, and inclusive workplace for our employees worldwide.."
                             </p>
-                            <a href="#" class="btn btn-red  rounded-pill ">Know more <i class="fa-solid fa-question"></i> </a>
+                            <div class="w-100 text-center">
+                                <img src="./assets/images/Francesca%20Zanisi.png" alt="bestplacestoworkfor_"  width="50" class="img-fluid  mx-0 my-2">
+                            </div>
+
+                            <p class="text-uppercase text-red text-center">
+                                FRANCESCA ZANISI
+                            </p>
+                            <p class="text-uppercase text-red text-center">
+                                <span class="text-muted">Concentrix</span>
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <p class="text-center">
+                            "We believe that a positive working environment greatly influences employees’ attitudes towards their work, co-workers and work productivity. Communication and collaboration develop a strong workplace culture and allows a comfortable environment for employees to share ideas, facilitate opportunities for learning and working towards a common goal"
+                        </p>
+                        <div class="col-md-8 mx-auto text-center">
+                            <img src="./assets/images/Wendy_Cupido_200x200_0.jpg" alt="bestplacestoworkfor_" width="50"  class="img-fluid  rounded-pill mx-0 my-2">
+                        </div>
+                        <h6 class="text-uppercase text-red text-center">
+                           Wendy cupido
+                        </h6>
+                        <h6 class="text-muted text-uppercase text-center">
+                            lundbeck
+                        </h6>
+                    </div>
+                </div>
             </div>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
         </div>
+
     </div>
-</div>
+
+</section>
 
 
 
 
 <button id="scrollToTop" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
-
 <script src="./assets/js/scripts.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
