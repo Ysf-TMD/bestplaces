@@ -41,6 +41,85 @@
     <link rel="stylesheet" href="./assets/styles/webinarSlider.css">
 </head>
 <style>
+    /* Styles du premier carousel (Bandeau rouge) */
+    .top-carousel {
+        background: red;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+    }
+    .top-carousel .messages {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: max-content;
+    }
+    .top-carousel .message {
+        min-width: 100vw;
+        text-align: center;
+    }
+    .top-carousel .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+
+    }
+    .top-carousel .left { left: 10px; }
+    .top-carousel .right { right: 10px; }
+
+    /* Styles du deuxième carousel */
+    .bottom-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .carousel-slide {
+        min-width: 100%;
+        position: relative;
+    }
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-text {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .prevSlide { left: 10px; }
+    .nextSlide { right: 10px; }
 
 </style>
 <body>
@@ -1054,20 +1133,56 @@
     </div>
 </div>
 <!-- Modal end  -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-<style>
-    .container-fluid .col-md-8 {
-        overflow-x: scroll;
-        -ms-overflow-style: none;  /* Pour IE */
-        scrollbar-width: none;  /* Pour Firefox */
-    }
 
-    /* Masquer la barre de défilement Webkit (Chrome, Safari, Edge) */
-    .container-fluid .col-md-8::-webkit-scrollbar {
-        display: none;
-    }
-</style>
+
+
+
+<!-- Premier Carousel (Bandeau rouge) -->
+<div class="top-carousel ">
+    <span class="arrow left">&#10094;</span>
+    <div class="messages">
+        <div class="message">Trial Pro, P.A. earns the Best Place to Work Certification in the USA for 2025</div>
+        <div class="message">Join us for an amazing workplace experience!</div>
+        <div class="message">Discover why we are the best place to work!</div>
+    </div>
+    <span class="arrow right">&#10095;</span>
+</div>
+
+<!-- Deuxième Carousel (Images avec texte) -->
+<div class="bottom-carousel">
+    <button class=" carousel-nav prevSlide">&#10094;</button>
+    <div class="carousel-track">
+        <div class="carousel-slide">
+            <img src="./assets/images/EN%20(1)-zqigev.avif" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="./assets/images/slide-ready-to-start-journey-ve2h1s.jpg" alt="Slide 2">
+            <div class="carousel-text text-uppercase text-white">
+                <p>Are your ready to start your journey as a best place to work now ?</p>
+                <p>
+                    Discover how the Best  Places to work program can help you create a better workplace
+                </p>
+                <div class="container-fluid text-center">
+                    <a href="#" class="nav-link  d-inline">
+                        <button class="rounded-0  shadow-none text-red  px-3 py-2 bg-white text-red border-0 fw-bold  text-uppercase">READ MORE</button>
+                    </a>
+                    <a href="#" class="nav-link d-inline">
+                        <button class="rounded-0 bg-red text-white px-3 border-0 py-2 text-uppercase">Watch our Video </button>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <button  class="carousel-nav nextSlide">&#10095;</button>
+</div>
+
+
+
+
 <section class="container-fluid text-center ">
     <h3 class="text-red fw-bold text-uppercase py-4 my-4 ">Join the list of certified companies today !</h3>
     <div  class=" mb-3 container-fluid mx-auto text-start">
@@ -1081,9 +1196,12 @@
         </div>
     </div>
     <div class="container-fluid pt-4">
-        <button class="bg-white px-3 py-2 border-2 border-danger rounded-0    text-red">
-            View our certified companies
-        </button>
+        <a href="./certifiedOrganisation.html" class="nav-link d-inline">
+            <button class="bg-white px-3 py-2 border-2 border-danger rounded-0    text-red">
+                View our certified companies
+            </button>
+        </a>
+
     </div>
 </section>
 
@@ -1106,7 +1224,7 @@
         <!-- Deuxième colonne avec image de fond et bouton -->
         <div class="col-md position-relative" style="background-image: url('./assets/images/banner-how-it-works-7vkztl.jpg'); background-size: cover; background-position: center; max-height: 400px;">
             <div class="d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle z-index-2">
-                <button class="bg-red border-1 border-white rounded-0 px-3 py-2 text-white">
+                <button class="bg-red border-0 border-white rounded-0 px-3 py-2 text-white">
                     Watch our video
                 </button>
             </div>
@@ -1166,7 +1284,7 @@
                         Our solutions transform your data into actionable insights, giving you a unique and accurate picture of the employee experience and the quality of your HR practices against the best standards
                     </p>
                     <div class="">
-                        <a href="#" class="nav-link">
+                        <a href="./ourWorkPlaceSolutions.html" class="nav-link">
                             <button class=" border-2  rounded-0 border  border-danger px-3 py-2 text-red bg-white">
                                 Learn More
                             </button>
@@ -1301,9 +1419,12 @@
 
 <section class="container-fluid py-5">
     <div class="container text-center">
-        <button class="text-red bg-white px-3 py-2 rounded-0 border-2 border-danger">
-            Our success stories
-        </button>
+        <a href="./successStories.html" class="nav-link d-inline">
+            <button class="text-red bg-white px-3 py-2 rounded-0 border-2 border-danger">
+                Our success stories
+            </button>
+        </a>
+
     </div>
 </section>
 
@@ -1320,7 +1441,10 @@
                     Join our upcoming webinars to learn about the latest best practices and trends around the employee experience
                 </p>
                 <div class="container-fluid">
-                    <button class="bg-white rounded-0 border-0 px-3 py-2">View all webinars</button>
+                    <a href="./webinars.html" class="nav-link d-inline">
+                        <button class="bg-white rounded-0 border-0 px-3 py-2">View all webinars</button>
+                    </a>
+
                 </div>
             </div>
             <div class="col-md"></div>
@@ -1336,7 +1460,7 @@
             Recently Certified Organizations
         </h3>
         <div class="row">
-            <div class="col-md">
+            <div class=" col-md">
                 <div class="container my-4 mt-4">
                     <div class="row g-3">
 
@@ -1452,11 +1576,144 @@
             <span class="prev">&#10094;</span>
             <span class="next">&#10095;</span>
         </div>
-
     </div>
+</section>
+<!--footer section start-->
 
+<section class="container-fluid py-3 bg-dark text-white">
+    <div class="col-md-8 mx-auto">
+        <div class="row">
+            <div class="col-md">
+                <h5 class="text-white  py-3 text-uppercase fw-bold">
+                    about us
+                </h5>
+                <p>
+                    Identifying and recognizing workplace greatness around the world
+                </p>
+                <div class="row my-4">
+                    <div class="col-md">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-file-zipper"></i> Cookie Policy
+                        </a>
+                        <a href="./privacyPolicy.html" class="nav-link">
+                            <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+                        </a>
+                        <a href="./privacyPolicy.html" class="nav-link">
+                            <i class="fa-solid fa-flag-checkered"></i> Claims
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <img src="./assets/images/gdpr-icon.png" width="100" alt="bestplacestoworkfor_" class="img-fluid mt-sm-2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <h5 class="text-white py-3 text-uppercase fw-bold">
+                    News Room
+                </h5>
+                <p>
+                    Top organizations honored with 2024 special awards by Best Places to Work program
+                </p>
+                <hr>
+                <p>
+                    Servier earns third consecutive Best Place to Work Certification in Ukraine for 2025
+                </p>
+                <hr>
+                <p>
+                    Gulf Hotels Group recognized as a Best Places to Work in Bahrain and UAE
+                </p>
+                <hr>
+
+            </div>
+            <div class="col-md">
+                <h5 class="text-white  py-3 text-uppercase fw-bold">
+                    Contact info
+                </h5>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Best Places to Work Ltd
+                    20 – 22 Wenlock Road - London
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i> +44 208 895 6562
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope mx-1"></i>
+                    <a href="mailto:info@bestplacestoworkfor.org" class="nav-link d-inline">info@bestplacestoworkfor.org</a>
+                </p>
+                <div class="h3 justify-content-around">
+                    <a href="https://x.com/BPTW4" class="nav-link d-inline">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/best-places-to-work-program/" class="nav-link d-inline">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com/bptw4all/" class="nav-link d-inline">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+
+
+
+<script>
+    // Premier carousel (bandeau rouge)
+    const messagesContainer = document.querySelector(".top-carousel .messages");
+    const messages = document.querySelectorAll(".top-carousel .message");
+    const totalMessages = messages.length;
+    let messageIndex = 0;
+
+    function showMessage(index) {
+        messagesContainer.style.transform = `translateX(-${index * 100}vw)`;
+    }
+
+    function nextMessage() {
+        messageIndex = (messageIndex + 1) % totalMessages;
+        showMessage(messageIndex);
+    }
+
+    function prevMessage() {
+        messageIndex = (messageIndex - 1 + totalMessages) % totalMessages;
+        showMessage(messageIndex);
+    }
+
+    document.querySelector(".top-carousel .right").addEventListener("click", nextMessage);
+    document.querySelector(".top-carousel .left").addEventListener("click", prevMessage);
+
+    setInterval(nextMessage, 5000); // Défilement auto
+
+    // Deuxième carousel (images)
+    const track = document.querySelector(".carousel-track");
+    const slides = document.querySelectorAll(".carousel-slide");
+    const totalSlides = slides.length;
+    let slideIndex = 0;
+
+    function showSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+        showSlide(slideIndex);
+    }
+
+    document.querySelector(".nextSlide").addEventListener("click", nextSlide);
+    document.querySelector(".prevSlide").addEventListener("click", prevSlide);
+
+    setInterval(nextSlide, 5000); // Défilement auto
+</script>
 
 
 
